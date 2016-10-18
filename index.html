@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>ROBOTO</title>
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/theme.min.css" rel="stylesheet">
+
+        <!--[if lt IE 9]>
+            <script src="assets/js/html5shiv.min.js"></script>
+            <script src="assets/js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="container-fluid hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                        <h1 class="section-divider">
+                            <span>ROBOTO</span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <p class="prompt">
+                            <span class="blue">roboto</span>@<span class="pink">Your-Automation-Biz-Handler</span> <span class="green" id="timestamp">14:17:10</span> <span class="pink">~</span> > <span class="cursor"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid status">
+            <div class="container">
+                
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th><span class="light-text">#</span>Worker</th>
+                            <th class="text-center"><span class="light-text">#</span>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody> 
+                        <tr>
+                            <td>Operating System</td>
+                            <td class="text-center"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Crondaemon</td>
+                            <td class="text-center"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Webservers</td>
+                            <td class="text-center"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Databases</td>
+                            <td class="text-center"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Webservices & API</td>
+                            <td class="text-center"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Dev Webhooks</td>
+                            <td class="text-center"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+        </div>
+        <hr />
+        <footer class="text-center">
+            <p>Curious? Visit <a href="http://mhlch.com">mhlch.com</a> or <a href="https://twitter.com/mhlch">@mhlch</a></p>
+        </footer>
+        
+        <script>
+            var d = new Date();
+            var n = d.toLocaleTimeString().substring(0, 8);
+            document.getElementById("timestamp").innerHTML = n;
+        </script>
+    </body>
+</html>
